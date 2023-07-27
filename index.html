@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./sass/partials/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Homepage title</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="addHero.html">Hero Creation</a>
+            <a href="addTeam.html">Team Creation</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Heroes available</h2>
+            <div class="heroTable">
+                <div id="heroes"></div>
+            </div>
+            <button onclick="deleteHeroes()">Delete Heroes</button>
+        </section>
+        <section>
+            <h2>Teams available</h2>
+            <div class="heroTable">
+                <div id="teams"></div>
+            </div>
+            <button onclick="deleteAll()">Delete Team</button>
+        </section>
+    </main>
+    <footer>
+        <p>PopSchoolLLV</p>        
+    </footer>
+    
+    
+    <script src="heroes.js"></script>
+</body>
+</html>

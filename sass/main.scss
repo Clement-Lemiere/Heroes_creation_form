@@ -1,0 +1,60 @@
+@import 'partials/variables.scss';
+@import 'partials/mixins.scss';
+
+body {
+    background-color: $darkBlue;
+    color: aliceblue;
+}
+a {
+    color: aliceblue;
+}
+header, main, section, .heroCard {
+    @include dFlex(column, center);
+}
+h1, h2, nav, a, #heroes, footer {
+    @include dFlex(row, center);   
+}
+h2 {
+    margin: 5px;
+}
+a {
+    background: linear-gradient(155deg, $darkGreen, $darkPurple );
+    text-decoration: solid 1px;
+    border: solid 1px $darkGreen;
+    border-radius: 19px;
+    padding: 3px 15px 5px;
+    font-size: 28px;
+    margin: 5px 15px;
+    width: 200px;
+}
+a:hover {
+    color: $darkBlue;
+    background: linear-gradient(200deg, $lightGreen, $lightPurple);
+    box-shadow: inset 2px -3px 6px;    
+}
+.heroCard {
+    border: solid 1px;
+    border-radius: 5px;
+    align-items: center;
+    width: 200px;
+    margin: 15px;
+}
+h3{
+    text-decoration: underline;
+}
+button {
+    color: aliceblue;
+    width: 110px;
+    padding: 5px;
+    border-radius: 15px;
+    background: linear-gradient(155deg, $darkGreen, $darkPurple);
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0 0 5px $lightGreen;
+}
+section {
+    align-items: center;
+    margin: 50px 20px;
+    padding-bottom: 15px;
+}

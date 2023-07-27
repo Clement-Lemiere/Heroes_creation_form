@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="./sass/partials/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <header>
+        <h1> - Create your Hero !!</h1>
+        <nav>
+            <a href="index.html">Back to Home</a>
+            <a href="addHero.html">Hero Creation</a>
+            <a href="addTeam.html">Team Creation</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Define your hero stats here</h2>
+        <div class="heroStat">
+            <label for="heroName">Name your Hero:</label>
+            <input type="text" name="heroName" id="heroName">
+        </div>
+        <div class="heroStat">
+            <label for="heroAttack">Set attack stat:</label>
+            <input type="text" name="heroAttack" id="heroAttack">
+        </div>
+        <div class="heroStat">
+            <label for="heroDefense">Set Defense stat:</label>
+            <input type="text" name="heroDefense" id="heroDefense">
+        </div>
+        <div class="heroStat">
+            <label for="heroLife">Set life stat:</label>
+            <input type="text" name="heroLife" id="heroLife">
+        </div>
+        <div class="heroStat">
+            <label for="heroLevel">Set level:</label>
+            <input type="text" name="heroLevel" id="heroLevel">
+        </div>
+        <button class="deleteBtn" onclick="addHero()">Confirm</button>
+    </main>
+    
+    
+    <script src="heroes.js"></script>
+</body>
+</html>

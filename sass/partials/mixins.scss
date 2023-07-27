@@ -1,0 +1,6 @@
+@mixin dFlex($flex-direction: row, $justify-content: flex-start){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
